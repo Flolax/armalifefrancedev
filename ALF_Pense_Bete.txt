@@ -1,0 +1,1 @@
+1) Pour les joueurs arrivant 1ere fois, inscrire la position des joueurs dans civ_position de l'endroit où nous voulons qu'ils spawn pour la première fois.

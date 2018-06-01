@@ -1,0 +1,1783 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	class ItemIDProvider
+	{
+		nextID=116;
+	};
+	class MarkerIDProvider
+	{
+		nextID=28;
+	};
+	class Camera
+	{
+		pos[]={8453.041,28.853672,9496.7402};
+		dir[]={0.69319624,-0.6939314,-0.19486323};
+		up[]={0.66804755,0.7200318,-0.18779327};
+		aside[]={-0.27062541,4.6487548e-007,-0.96270204};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Characters_F_Exp_Civil",
+	"A3_Ui_F",
+	"A3_Structures_F_Civ_InfoBoards",
+	"ALF_Markers"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=5;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="ALF_Markers";
+			name="ALF_Markers";
+		};
+	};
+};
+randomSeed=3564658;
+class ScenarioData
+{
+	author="ALF - Nanou";
+	overViewPicture="\ALF_Client\textures\armalife.jpg";
+	overViewPictureLocked="\ALF_Client\textures\armalife.jpg";
+	loadScreen="\ALF_Client\textures\armalife.jpg";
+	saving=0;
+	respawnDialog=0;
+	disabledAI=1;
+	respawn=3;
+	respawnDelay=5;
+	class Header
+	{
+		gameType="RPG";
+		maxPlayers=144;
+	};
+	wreckLimit=3;
+	wreckRemovalMinTime=60;
+	wreckRemovalMaxTime=320;
+	corpseLimit=150;
+	corpseRemovalMinTime=900;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=2;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="Arma Life France";
+		timeOfChanges=14400;
+		startWeather=0.0086410306;
+		startWind=0.055235427;
+		startWaves=0.1;
+		forecastWeather=0.0086410306;
+		forecastWind=0.076414838;
+		forecastWaves=0.1;
+		forecastLightnings=0.046763863;
+		rainForced=1;
+		lightningsForced=1;
+		wavesForced=1;
+		windForced=1;
+		year=2017;
+		month=1;
+		day=1;
+		minute=0;
+		startFogDecay=0;
+		forecastFogDecay=0;
+	};
+	class Entities
+	{
+		items=68;
+		class Item0
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={269.95401,4.9814386,277.06699};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="JGVKBLKUJGVKGHCFXHDXFDHSHV = false;";
+						name="Civ_1";
+						description="Slot de jeu";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=1;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={272.50714,4.9814386,277.06659};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="Civ_2";
+						description="Slot de jeu";
+						isPlayable=1;
+					};
+					id=3;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2;
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={267.40067,4.9814386,277.19843};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="Civ_3";
+						description="Slot de jeu";
+						isPlayable=1;
+					};
+					id=7;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6;
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={264.80341,4.9814386,277.24335};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="Civ_4";
+						description="Slot de jeu";
+						isPlayable=1;
+					};
+					id=9;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=8;
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={264.7594,4.9814386,279.97284};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="Civ_5";
+						description="Slot de jeu";
+						isPlayable=1;
+					};
+					id=11;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=10;
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={267.4447,4.9814386,279.97284};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="Civ_6";
+						description="Slot de jeu";
+						isPlayable=1;
+					};
+					id=13;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=12;
+		};
+		class Item6
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={270.12997,4.9814386,279.92792};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="Civ_7";
+						description="Slot de jeu";
+						isPlayable=1;
+					};
+					id=15;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=14;
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={272.55115,4.9814386,279.79706};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="Civ_8";
+						description="Slot de jeu";
+						isPlayable=1;
+					};
+					id=17;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=16;
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={274.79623,4.9814386,279.84003};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="Civ_9";
+						description="Slot de jeu";
+						isPlayable=1;
+					};
+					id=19;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=18;
+		};
+		class Item9
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={274.7522,4.9814386,277.11053};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="Civ_10";
+						description="Slot de jeu";
+						isPlayable=1;
+					};
+					id=21;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=20;
+		};
+		class Item10
+		{
+			dataType="Marker";
+			position[]={269.60434,4.98,290.7908};
+			name="respawn_civilian";
+			type="Empty";
+			id=32;
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7809.2891,1.9775373,9500.2822};
+				angles[]={0.011955505,1.8784629,6.2747378};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_car"",[""civ_car_1"",""civ_car_1_1""],""Bruce's New & Used Auto's""]];";
+				disableSimulation=1;
+			};
+			id=35;
+			type="Land_InfoStand_V1_F";
+			atlOffset=0.18400002;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item12
+		{
+			dataType="Marker";
+			position[]={7798.9023,1.2668616,9505.0986};
+			name="civ_car_1";
+			type="Empty";
+			angle=20.480257;
+			id=36;
+		};
+		class Item13
+		{
+			dataType="Marker";
+			position[]={8433.5156,5.6302686,9479.8926};
+			name="car_g_1";
+			type="Empty";
+			angle=291.25574;
+			id=37;
+		};
+		class Item14
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={266.20602,4.98,405.87598};
+			};
+			name="hc_1";
+			isPlayable=1;
+			description="Headless Client";
+			id=41;
+			type="HeadlessClient_F";
+		};
+		class Item15
+		{
+			dataType="Marker";
+			position[]={6005.7192,12394708,8435.6543};
+			name="hunting_marker";
+			text="@STR_MAR_Hunting_Grounds";
+			type="ALF_hunting";
+			id=51;
+			atlOffset=12394693;
+		};
+		class Item16
+		{
+			dataType="Marker";
+			position[]={3266.4871,4.1332267e+029,12225.396};
+			name="respawn_hp_2";
+			type="Empty";
+			id=52;
+			atlOffset=4.1332267e+029;
+		};
+		class Item17
+		{
+			dataType="Marker";
+			position[]={13583.905,4.1332267e+029,4128.6875};
+			name="respawn_hp_3";
+			type="Empty";
+			id=54;
+			atlOffset=4.1332267e+029;
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8149.6758,34.575363,8451.124};
+				angles[]={0,1.9315559,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_General_Store"",life_fnc_weaponShopMenu,""genstore""];";
+				disableSimulation=1;
+			};
+			id=55;
+			type="Land_InfoStand_V1_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item19
+		{
+			dataType="Marker";
+			position[]={7940.8101,1567265.5,8248.2344};
+			name="marker_3";
+			type="ALF_total";
+			id=57;
+			atlOffset=1567230.5;
+		};
+		class Item20
+		{
+			dataType="Marker";
+			position[]={8456.166,5.5999999,9518.4238};
+			name="marker_4";
+			type="ALF_orange";
+			id=58;
+		};
+		class Item21
+		{
+			dataType="Marker";
+			position[]={8473.4805,5.5844483,9511.9131};
+			name="marker_5";
+			type="ALF_creditm";
+			id=59;
+		};
+		class Item22
+		{
+			dataType="Marker";
+			position[]={8128.6499,234690.19,9392.2129};
+			name="respawn_hp_1";
+			type="ALF_hopital";
+			id=60;
+			atlOffset=234675.72;
+		};
+		class Item23
+		{
+			dataType="Marker";
+			position[]={8280.3193,27.672869,8701.0518};
+			name="marker_7";
+			type="ALF_ikea";
+			id=61;
+		};
+		class Item24
+		{
+			dataType="Marker";
+			position[]={8310.4111,22.537081,8827.3027};
+			name="marker_8";
+			type="ALF_peugeot";
+			id=62;
+		};
+		class Item25
+		{
+			dataType="Marker";
+			position[]={8352.5166,5.2732286,9565.6445};
+			name="marker_9";
+			type="ALF_renault";
+			id=63;
+		};
+		class Item26
+		{
+			dataType="Marker";
+			position[]={8492.877,5.5776057,9538.3936};
+			name="marker_10";
+			type="ALF_autoecole";
+			id=64;
+		};
+		class Item27
+		{
+			dataType="Marker";
+			position[]={8555.9629,6.9589515,9291.9639};
+			name="marker_11";
+			type="ALF_gen";
+			id=65;
+		};
+		class Item28
+		{
+			dataType="Marker";
+			position[]={8428.0371,5.6478004,9472.8799};
+			name="marker_12";
+			type="ALF_garage";
+			id=66;
+		};
+		class Item29
+		{
+			dataType="Marker";
+			position[]={7904.0679,1.0350006,9473.5371};
+			name="marker_13";
+			type="ALF_total";
+			id=67;
+		};
+		class Item30
+		{
+			dataType="Marker";
+			position[]={14454.854,62849.297,14249.567};
+			name="marker_16";
+			type="ALF_logoalf";
+			a=3;
+			b=3;
+			id=70;
+			atlOffset=62899.297;
+		};
+		class Item31
+		{
+			dataType="Marker";
+			position[]={14506.813,0,12551.218};
+			name="marker_17";
+			type="ALF_logots";
+			id=71;
+			atlOffset=50;
+		};
+		class Item32
+		{
+			dataType="Marker";
+			position[]={3955.7542,90,9909.752};
+			name="marker_18";
+			type="ALF_total";
+			id=72;
+		};
+		class Item33
+		{
+			dataType="Marker";
+			position[]={7805.8521,1.2334247,9511.9297};
+			name="marker_20";
+			type="ALF_vnormal_icon";
+			id=74;
+		};
+		class Item34
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8557.627,4.907155,9604.3564};
+				angles[]={0.029984757,6.2547364,0.0075049158};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[""Marché"",life_fnc_weaponShopMenu,""market""];";
+				disableSimulation=1;
+			};
+			id=75;
+			type="Land_InfoStand_V1_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item35
+		{
+			dataType="Marker";
+			position[]={8555.96,4.2991138,9605.0195};
+			name="marker_21";
+			type="ALF_marche";
+			id=76;
+		};
+		class Item36
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8477.501,6.7514315,9417.582};
+				angles[]={0,4.9815359,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[""Marché général"",life_fnc_weaponShopMenu,""genstore""];";
+				disableSimulation=1;
+			};
+			id=77;
+			type="Land_InfoStand_V1_F";
+			atlOffset=0.00043106079;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item37
+		{
+			dataType="Marker";
+			position[]={8480.0859,5.7389841,9418.8516};
+			name="marker_22";
+			type="ALF_marcheg";
+			id=78;
+		};
+		class Item38
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8445.5439,6.2163377,9470.042};
+				angles[]={0.0024958209,1.7132502,6.2806892};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[""Mon garage"",  {[getPlayerUID player,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Chargement...""];   life_garage_sp = ""car_g_1"";  }];  this addAction[""Ranger mon véhicule"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+				disableSimulation=1;
+			};
+			id=79;
+			type="Land_InfoStand_V1_F";
+			atlOffset=-6.2942505e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item39
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8497.5693,6.1525683,9537.3096};
+				angles[]={0,3.6208427,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[""Passer mon permis"",ALF_fnc_permisCar];";
+				disableSimulation=1;
+			};
+			id=80;
+			type="Land_InfoStand_V1_F";
+			atlOffset=0.078000069;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item40
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8458.4277,6.175364,9519.2402};
+				angles[]={0,0.29185396,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[""Forfait"",{ [""Orange"", ""Connexion avec le service client d'Orange."", ""warning"", false] spawn ALF_fnc_doMsg; [] call ALF_fnc_menuForfait; }]; this addAction[""Magasin"",life_fnc_weaponShopMenu,""orange""];";
+				disableSimulation=1;
+			};
+			id=83;
+			type="Land_InfoStand_V1_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item41
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8467.6963,6.1907439,9514.4756};
+				angles[]={0,0.24579471,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[""Menu Banque"",ALF_fnc_menuCompteBancaire]; this addAction[""Magasin"",life_fnc_weaponShopMenu,""bankstore""];";
+				disableSimulation=1;
+			};
+			id=84;
+			type="Land_InfoStand_V1_F";
+			atlOffset=0.019999981;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item42
+		{
+			dataType="Marker";
+			position[]={7434.792,5.7948365,9169.8652};
+			name="marker_23";
+			type="ALF_pompier";
+			id=85;
+		};
+		class Item43
+		{
+			dataType="Marker";
+			position[]={8477.6709,6.210372,9407.7178};
+			name="marker_24";
+			type="ALF_marchev";
+			id=86;
+		};
+		class Item44
+		{
+			dataType="Marker";
+			position[]={6005.6724,15.044841,8433.1084};
+			name="hunting_elipse";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorWhite";
+			a=400;
+			b=400;
+			id=89;
+		};
+		class Item45
+		{
+			dataType="Marker";
+			position[]={8500.3721,3.8221281e+009,9550.7275};
+			name="p_lepalais_start";
+			type="Empty";
+			angle=25.363989;
+			id=93;
+			atlOffset=3.8221281e+009;
+		};
+		class Item46
+		{
+			dataType="Marker";
+			position[]={8524.7813,9.7798453e+020,9548.6846};
+			name="p_lepalais_1";
+			type="Empty";
+			angle=103.93398;
+			id=94;
+			atlOffset=9.7798453e+020;
+		};
+		class Item47
+		{
+			dataType="Marker";
+			position[]={8531.8887,3670099,9527.2168};
+			name="p_lepalais_2";
+			type="Empty";
+			angle=200.87694;
+			id=95;
+			atlOffset=3670093.8;
+		};
+		class Item48
+		{
+			dataType="Marker";
+			position[]={8464.4199,9.7798453e+020,9328.7891};
+			name="p_lepalais_3";
+			type="Empty";
+			angle=194.98042;
+			id=96;
+			atlOffset=9.7798453e+020;
+		};
+		class Item49
+		{
+			dataType="Marker";
+			position[]={8474.4453,9.7798453e+020,9303.666};
+			name="p_lepalais_4";
+			type="Empty";
+			angle=103.93398;
+			id=97;
+			atlOffset=9.7798453e+020;
+		};
+		class Item50
+		{
+			dataType="Marker";
+			position[]={8473.6162,9.7798453e+020,9270.458};
+			name="p_lepalais_5";
+			type="Empty";
+			angle=205.5161;
+			id=98;
+			atlOffset=9.7798453e+020;
+		};
+		class Item51
+		{
+			dataType="Marker";
+			position[]={8125.6304,9.7798453e+020,8539.2734};
+			name="p_lepalais_6";
+			type="Empty";
+			angle=204.86395;
+			id=99;
+			atlOffset=9.7798453e+020;
+		};
+		class Item52
+		{
+			dataType="Marker";
+			position[]={7799.416,9.7798453e+020,7861.5791};
+			name="p_lepalais_7";
+			type="Empty";
+			angle=212.52695;
+			id=100;
+			atlOffset=9.7798453e+020;
+		};
+		class Item53
+		{
+			dataType="Marker";
+			position[]={7701.2886,9.7798453e+020,7762.127};
+			name="p_lepalais_8";
+			type="Empty";
+			angle=302.43304;
+			id=101;
+			atlOffset=9.7798453e+020;
+		};
+		class Item54
+		{
+			dataType="Marker";
+			position[]={7512.8794,9.7798453e+020,7765.1221};
+			name="p_lepalais_9";
+			type="Empty";
+			angle=226.43159;
+			id=102;
+			atlOffset=9.7798453e+020;
+		};
+		class Item55
+		{
+			dataType="Marker";
+			position[]={6617.0083,9.7798453e+020,7231.5674};
+			name="p_lepalais_10";
+			type="Empty";
+			angle=225.88171;
+			id=103;
+			atlOffset=9.7798453e+020;
+		};
+		class Item56
+		{
+			dataType="Marker";
+			position[]={6452.561,9.7798453e+020,7070.792};
+			name="p_lepalais_11";
+			type="Empty";
+			angle=220.81326;
+			id=104;
+			atlOffset=9.7798453e+020;
+		};
+		class Item57
+		{
+			dataType="Marker";
+			position[]={6379.9263,9.7798453e+020,7057.2051};
+			name="p_lepalais_12";
+			type="Empty";
+			angle=304.50958;
+			id=105;
+			atlOffset=9.7798453e+020;
+		};
+		class Item58
+		{
+			dataType="Marker";
+			position[]={5864.4507,9.7798453e+020,7380.5586};
+			name="p_lepalais_13";
+			type="Empty";
+			angle=295.08337;
+			id=106;
+			atlOffset=9.7798453e+020;
+		};
+		class Item59
+		{
+			dataType="Marker";
+			position[]={5705.7515,9.7798453e+020,7459.6602};
+			name="p_lepalais_14";
+			type="Empty";
+			angle=322.63245;
+			id=107;
+			atlOffset=9.7798453e+020;
+		};
+		class Item60
+		{
+			dataType="Marker";
+			position[]={5706.4268,9.7798453e+020,7580.7354};
+			name="p_lepalais_15";
+			type="Empty";
+			angle=41.423321;
+			id=108;
+			atlOffset=9.7798453e+020;
+		};
+		class Item61
+		{
+			dataType="Marker";
+			position[]={6872.2031,9.7798453e+020,8499.6084};
+			name="p_lepalais_16";
+			type="Empty";
+			angle=72.688751;
+			id=109;
+			atlOffset=9.7798453e+020;
+		};
+		class Item62
+		{
+			dataType="Marker";
+			position[]={6961.854,9.7798453e+020,8580.1279};
+			name="p_lepalais_17";
+			type="Empty";
+			angle=13.828545;
+			id=110;
+			atlOffset=9.7798453e+020;
+		};
+		class Item63
+		{
+			dataType="Marker";
+			position[]={7511.2891,9.7798453e+020,9303.7109};
+			name="p_lepalais_18";
+			type="Empty";
+			angle=69.828575;
+			id=111;
+			atlOffset=9.7798453e+020;
+		};
+		class Item64
+		{
+			dataType="Marker";
+			position[]={8177.46,9.7798453e+020,9566.5117};
+			name="p_lepalais_19";
+			type="Empty";
+			angle=34.196045;
+			id=112;
+			atlOffset=9.7798453e+020;
+		};
+		class Item65
+		{
+			dataType="Marker";
+			position[]={8449.6885,9.7798453e+020,9645.6074};
+			name="p_lepalais_20";
+			type="Empty";
+			angle=148.24155;
+			id=113;
+			atlOffset=9.7798453e+020;
+		};
+		class Item66
+		{
+			dataType="Marker";
+			position[]={8522.6445,9.7798453e+020,9580.998};
+			name="p_lepalais_21";
+			type="Empty";
+			angle=161.02948;
+			id=114;
+			atlOffset=9.7798453e+020;
+		};
+		class Item67
+		{
+			dataType="Marker";
+			position[]={8519.1279,14520588,9556.8887};
+			name="p_lepalais_end";
+			type="Empty";
+			angle=301.16287;
+			id=115;
+			atlOffset=14520583;
+		};
+	};
+};
